@@ -7,37 +7,236 @@ const Hero = () => {
         id="home"
         className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
       >
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4">
-              <div
-                className="wow fadeInUp mx-auto max-w-[800px] text-center"
-                data-wow-delay=".2s"
-              >
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                Free and Open-Source Next.js Template for Startup & SaaS
-                </h1>
-                <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                Startup is free Next.js template for startups and SaaS business websites comes with all the essential pages, components, and sections you need to launch a complete business website, built-with Next 13.x and Tailwind CSS.
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-                  <Link
-                    href="https://nextjstemplates.com/templates/startup"
-                    className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+        <div className="relative pt-[120px] pb-[110px] lg:pt-[150px]">
+          <div className="container">
+            <div className="-mx-4 flex flex-wrap">
+              <div className="w-full px-4 lg:w-5/12">
+                <div className="hero-content">
+                  <h1
+                    className="
+                  mb-3
+                  text-4xl
+                  font-bold
+                  leading-snug
+                  text-dark
+                  sm:text-[42px]
+                  lg:text-[40px]
+                  xl:text-[42px]
+                "
                   >
-                    Download Now
-                  </Link>
-                  <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
-                    className="rounded-md bg-black/20 py-4 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
-                  >
-                    Star on GitHub
-                  </Link>
+                    Kickstart <br />
+                    Startup Website <br />
+                    with TailGrids.
+                  </h1>
+                  <p className="mb-8 max-w-[480px] text-base text-body-color">
+                    With TailGrids, business and students thrive together.
+                    Business can perfectly match their staffing to changing
+                    demand throughout the dayed.
+                  </p>
+                  <ul className="flex flex-wrap items-center">
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        className="
+                      inline-flex
+                      items-center
+                      justify-center
+                      rounded-lg
+                      bg-primary
+                      py-4
+                      px-6
+                      text-center
+                      text-base font-normal text-white
+                      hover:bg-opacity-90
+                      sm:px-10
+                      lg:px-8
+                      xl:px-10
+                    "
+                      >
+                        Get Started
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="javascript:void(0)"
+                        className="
+                      inline-flex
+                      items-center
+                      justify-center
+                      py-4
+                      px-6
+                      text-center
+                      text-base
+                      font-normal
+                      text-body-color hover:text-primary
+                      sm:px-10
+                      lg:px-8
+                      xl:px-10
+                    "
+                      >
+                        <span className="mr-2">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="11" cy="11" r="11" fill="#3056D3" />
+                            <rect
+                              x="6.90906"
+                              y="13.3636"
+                              width="8.18182"
+                              height="1.63636"
+                              fill="white"
+                            />
+                            <rect
+                              x="10.1818"
+                              y="6"
+                              width="1.63636"
+                              height="4.09091"
+                              fill="white"
+                            />
+                            <path
+                              d="M11 12.5454L13.8343 9.47726H8.16576L11 12.5454Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </span>
+                        Download App
+                      </a>
+                    </li>
+                  </ul>
+                  <div className="clients pt-16">
+                    <h6
+                      className="
+                    mb-2
+                    flex
+                    items-center
+                    text-xs
+                    font-normal
+                    text-body-color
+                  "
+                    >
+                      Some Of Our Clients
+                      <span className="ml-2 inline-block h-[1px] w-8 bg-body-color"></span>
+                    </h6>
+                    <div className="flex items-center">
+                      <div className="mr-4 w-full py-3">
+                        <img
+                          src="https://cdn.tailgrids.com/1.0/assets/images/brands/ayroui.svg"
+                          alt="ayroui"
+                        />
+                      </div>
+                      <div className="mr-4 w-full py-3">
+                        <img
+                          src="https://cdn.tailgrids.com/1.0/assets/images/brands/graygrids.svg"
+                          alt="graygrids"
+                        />
+                      </div>
+                      <div className="mr-4 w-full py-3">
+                        <img
+                          src="https://cdn.tailgrids.com/1.0/assets/images/brands/uideck.svg"
+                          alt="uideck"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="hidden px-4 lg:block lg:w-1/12"></div>
+              <div className="w-full px-4 lg:w-6/12">
+                <div className="lg:ml-auto lg:text-right">
+                  <div className="relative z-10 inline-block pt-11 lg:pt-0">
+                    <img
+                      src="https://cdn.tailgrids.com/1.0/assets/images/hero/hero-image-01.png"
+                      alt="hero"
+                      className="max-w-full lg:ml-auto"
+                    />
+                    <span className="absolute -left-8 -bottom-8 z-[-1]">
+                      <svg
+                        width="93"
+                        height="93"
+                        viewBox="0 0 93 93"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="2.5" cy="2.5" r="2.5" fill="#3056D3" />
+                        <circle cx="2.5" cy="24.5" r="2.5" fill="#3056D3" />
+                        <circle cx="2.5" cy="46.5" r="2.5" fill="#3056D3" />
+                        <circle cx="2.5" cy="68.5" r="2.5" fill="#3056D3" />
+                        <circle cx="2.5" cy="90.5" r="2.5" fill="#3056D3" />
+                        <circle cx="24.5" cy="2.5" r="2.5" fill="#3056D3" />
+                        <circle cx="24.5" cy="24.5" r="2.5" fill="#3056D3" />
+                        <circle cx="24.5" cy="46.5" r="2.5" fill="#3056D3" />
+                        <circle cx="24.5" cy="68.5" r="2.5" fill="#3056D3" />
+                        <circle cx="24.5" cy="90.5" r="2.5" fill="#3056D3" />
+                        <circle cx="46.5" cy="2.5" r="2.5" fill="#3056D3" />
+                        <circle cx="46.5" cy="24.5" r="2.5" fill="#3056D3" />
+                        <circle cx="46.5" cy="46.5" r="2.5" fill="#3056D3" />
+                        <circle cx="46.5" cy="68.5" r="2.5" fill="#3056D3" />
+                        <circle cx="46.5" cy="90.5" r="2.5" fill="#3056D3" />
+                        <circle cx="68.5" cy="2.5" r="2.5" fill="#3056D3" />
+                        <circle cx="68.5" cy="24.5" r="2.5" fill="#3056D3" />
+                        <circle cx="68.5" cy="46.5" r="2.5" fill="#3056D3" />
+                        <circle cx="68.5" cy="68.5" r="2.5" fill="#3056D3" />
+                        <circle cx="68.5" cy="90.5" r="2.5" fill="#3056D3" />
+                        <circle cx="90.5" cy="2.5" r="2.5" fill="#3056D3" />
+                        <circle cx="90.5" cy="24.5" r="2.5" fill="#3056D3" />
+                        <circle cx="90.5" cy="46.5" r="2.5" fill="#3056D3" />
+                        <circle cx="90.5" cy="68.5" r="2.5" fill="#3056D3" />
+                        <circle cx="90.5" cy="90.5" r="2.5" fill="#3056D3" />
+                      </svg>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+          <div className="mr-auto place-self-center lg:col-span-7">
+            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+              Payments tool for software companies
+            </h1>
+            <p className="text-gray-500 dark:text-gray-400 mb-6 max-w-2xl font-light md:text-lg lg:mb-8 lg:text-xl">
+              From checkout to global sales tax compliance, companies around the
+              world use Flowbite to simplify their payment stack.
+            </p>
+            <a
+              href="#"
+              className="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 mr-3 inline-flex items-center justify-center rounded-lg px-5 py-3 text-center text-base font-medium text-white focus:ring-4"
+            >
+              Get started
+              <svg
+                className="ml-2 -mr-1 h-5 w-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="#"
+              className="text-gray-900 border-gray-300 hover:bg-gray-100 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 inline-flex items-center justify-center rounded-lg border px-5 py-3 text-center text-base font-medium focus:ring-4 dark:text-white"
+            >
+              Speak to Sales
+            </a>
+          </div>
+          <div className="hidden lg:col-span-5 lg:mt-0 lg:flex">
+            <img
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+              alt="mockup"
+            />
+          </div>
+        </div>
+
         <div className="absolute top-0 right-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
