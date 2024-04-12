@@ -7,28 +7,15 @@ const Hero = () => {
         id="home"
         className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
       >
-        <div className="relative pt-[120px] pb-[110px] lg:pt-[150px]">
+        <div className="relative pt-[1px] pb-[1px] lg:pt-[1px]">
           <div className="container">
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4 lg:w-5/12">
                 <div className="hero-content">
-                  <h1
-                    className="
-                  mb-3
-                  text-4xl
-                  font-bold
-                  leading-snug
-                  text-dark
-                  sm:text-[42px]
-                  lg:text-[40px]
-                  xl:text-[42px]
-                "
-                  >
-                    Kickstart <br />
-                    Startup Website <br />
-                    with TailGrids.
+                  <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+                    Kickstart Startup Website with TailGrids.
                   </h1>
-                  <p className="mb-8 max-w-[480px] text-base text-body-color">
+                  <p className="mb-8 max-w-[480px] text-base text-body-color  dark:text-white">
                     With TailGrids, business and students thrive together.
                     Business can perfectly match their staffing to changing
                     demand throughout the dayed.
@@ -37,21 +24,7 @@ const Hero = () => {
                     <li>
                       <a
                         href="javascript:void(0)"
-                        className="
-                      inline-flex
-                      items-center
-                      justify-center
-                      rounded-lg
-                      bg-primary
-                      py-4
-                      px-6
-                      text-center
-                      text-base font-normal text-white
-                      hover:bg-opacity-90
-                      sm:px-10
-                      lg:px-8
-                      xl:px-10
-                    "
+                        className="px-6t txt-center  inline-flex items-center justify-center rounded-lg bg-primary py-4 text-base font-normal text-white  hover:bg-opacity-90 sm:px-10 lg:px-8 xl:px-10"
                       >
                         Get Started
                       </a>
@@ -195,7 +168,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+        <div className="mx-auto grid max-w-screen-xl px-1 py-1 lg:grid-cols-12 lg:gap-1 lg:py-1 xl:gap-0">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
               Payments tool for software companies
