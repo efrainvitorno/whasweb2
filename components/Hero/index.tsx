@@ -5,17 +5,17 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+        className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[100px] 2xl:pb-[2px]"
       >
         <div className="relative pt-[1px] pb-[1px] lg:pt-[1px]">
           <div className="container">
             <div className="-mx-4 flex flex-wrap">
               <div className="w-full px-4 lg:w-5/12">
                 <div className="hero-content">
-                  <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+                  <h1 className="dark:text-white mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
                     Kickstart Startup Website with TailGrids.
                   </h1>
-                  <p className="mb-8 max-w-[480px] text-base text-body-color  dark:text-white">
+                  <p className="dark:text-white mb-8 max-w-[480px] text-base  text-body-color">
                     With TailGrids, business and students thrive together.
                     Business can perfectly match their staffing to changing
                     demand throughout the dayed.
@@ -120,12 +120,103 @@ const Hero = () => {
               <div className="hidden px-4 lg:block lg:w-1/12"></div>
               <div className="w-full px-4 lg:w-6/12">
                 <div className="lg:ml-auto lg:text-right">
+                  <div className="mx-auto max-w-md p-4">
+                    {/* Chat Container */}
+                    <div className="bg-indigo-50 rounded-lg p-4 shadow-md">
+                      {/* Chat Header */}
+                      <div className="mb-4 flex items-center">
+                        <div className="ml-3">
+                          <p className="text-xl font-medium">
+                            Your AI Assistant
+                          </p>
+                          <p className="text-gray-500">Online</p>
+                        </div>
+                      </div>
+
+                      {/* Chat Messages */}
+                      <div className="space-y-4">
+                        {/* Received Message */}
+                        <div className="flex items-start">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 100 100"
+                            width="100"
+                            height="100"
+                            fill="#009688"
+                            className="h-8 w-8 rounded-full"
+                          >
+                            {/* Robot Face */}
+                            <circle cx="50" cy="50" r="20" fill="#009688" />
+                            <circle cx="50" cy="40" r="2" fill="#fff" />
+                            <rect
+                              x="47"
+                              y="45"
+                              width="6"
+                              height="10"
+                              fill="#fff"
+                            />
+                            <circle cx="50" cy="65" r="3" fill="#009688" />
+
+                            {/* Robot Eyes */}
+                            <circle cx="45" cy="45" r="3" fill="#fff" />
+                            <circle cx="55" cy="45" r="3" fill="#fff" />
+                            <circle cx="45" cy="45" r="1" fill="#000" />
+                            <circle cx="55" cy="45" r="1" fill="#000" />
+
+                            {/* Robot Antennas */}
+                            <line
+                              x1="50"
+                              y1="30"
+                              x2="40"
+                              y2="20"
+                              stroke="#009688"
+                              stroke-width="2"
+                            />
+                            <line
+                              x1="50"
+                              y1="30"
+                              x2="60"
+                              y2="20"
+                              stroke="#009688"
+                              stroke-width="2"
+                            />
+                          </svg>
+                          <div className="bg-gray-100 ml-3 rounded-lg p-3">
+                            <p className="text-gray-800 text-sm">
+                              Hello! How can I help you today?
+                            </p>
+                          </div>
+                        </div>
+
+                        {/* Sent Message */}
+                        <div className="flex items-end justify-end">
+                          <div className="bg-blue-600 rounded-lg p-3">
+                            <p className="text-sm text-white">
+                              Sure, I have a question.
+                            </p>
+                          </div>
+                          <img
+                            src="https://pbs.twimg.com/profile_images/1707101905111990272/Z66vixO-_normal.jpg"
+                            alt="Other User Avatar"
+                            className="ml-3 h-8 w-8 rounded-full"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="mt-4 flex items-center">
+                        <input
+                          type="text"
+                          placeholder="Type your message..."
+                          className="bg-gray-100 flex-1 rounded-full py-2 px-3 focus:outline-none"
+                        />
+                        <button className="bg-blue-500 hover:bg-blue-600 ml-3 rounded-full px-4 py-2 text-white">
+                          Send
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
                   <div className="relative z-10 inline-block pt-11 lg:pt-0">
-                    <img
-                      src="https://cdn.tailgrids.com/1.0/assets/images/hero/hero-image-01.png"
-                      alt="hero"
-                      className="max-w-full lg:ml-auto"
-                    />
                     <span className="absolute -left-8 -bottom-8 z-[-1]">
                       <svg
                         width="93"
@@ -170,7 +261,7 @@ const Hero = () => {
 
         <div className="mx-auto grid max-w-screen-xl px-1 py-1 lg:grid-cols-12 lg:gap-1 lg:py-1 xl:gap-0">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl">
+            <h1 className="dark:text-white mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl">
               Payments tool for software companies
             </h1>
             <p className="text-gray-500 dark:text-gray-400 mb-6 max-w-2xl font-light md:text-lg lg:mb-8 lg:text-xl">
@@ -197,7 +288,7 @@ const Hero = () => {
             </a>
             <a
               href="#"
-              className="text-gray-900 border-gray-300 hover:bg-gray-100 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 inline-flex items-center justify-center rounded-lg border px-5 py-3 text-center text-base font-medium focus:ring-4 dark:text-white"
+              className="text-gray-900 border-gray-300 hover:bg-gray-100 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:text-white inline-flex items-center justify-center rounded-lg border px-5 py-3 text-center text-base font-medium focus:ring-4"
             >
               Speak to Sales
             </a>
